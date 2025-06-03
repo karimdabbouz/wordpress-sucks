@@ -6,17 +6,18 @@ Template: hello-elementor
 body {
     background: #F6F6F6;
     color: #071113;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: 'PT Serif', Georgia, serif;
 }
 
 .dbx-single-container {
-    max-width: 50vw;
-    margin: 3rem auto;
-    padding: 2rem 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    font-family: 'Poppins', Arial, sans-serif;
+    max-width: 900px;
+    margin: 4rem auto 4rem auto;
+    padding: 0 1.5rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 @media (max-width: 800px) {
@@ -28,21 +29,29 @@ body {
 }
 
 .dbx-single-title {
-    font-family: 'PT Serif', Georgia, serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #003A40;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    color: #071113;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .dbx-single-meta {
     color: #24896C;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.02em;
     font-family: 'Poppins', Arial, sans-serif;
 }
 
 .dbx-single-image {
-    margin-bottom: 2rem;
+    margin: 2.5rem 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    overflow: visible;
 }
 
 .dbx-single-image img {
@@ -51,29 +60,30 @@ body {
     height: auto;
     border-radius: 8px;
     margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: none;
 }
 
 .dbx-single-teaser {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    color: #003A40;
-}
-
-.dbx-single-content {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
     color: #071113;
-    margin-top: 1.5rem;
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-.dbx-single-summary {
-    margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
+.dbx-single-content,
+.dbx-single-content p,
+.dbx-single-summary,
+.dbx-single-summary li {
     color: #071113;
+    font-size: 20px;
+    font-family: 'PT Serif', Georgia, serif;
+}
+
+.dbx-single-summary {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    font-size: 1.1rem;
     background: #E0F2EC;
     border-left: 4px solid #A6D770;
     border-radius: 6px;
@@ -81,18 +91,83 @@ body {
 }
 
 .dbx-single-summary li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     list-style: none;
     padding-left: 0;
     position: relative;
-    font-family: 'Poppins', Arial, sans-serif;
 }
 
-.dbx-single-summary li::before {
-    content: "–";
+.dbx-single-content figure {
+    margin: 2.5rem 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.dbx-single-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.dbx-single-content figcaption {
+    font-size: 0.98rem;
     color: #24896C;
+    text-align: center;
+    padding: 0.5em 1em 1em 1em;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: none;
+}
+
+.dbx-single-image-card {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    overflow: visible;
+}
+
+.dbx-single-image-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+/* Lightbox styles */
+.dbx-lightbox-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+.dbx-lightbox-overlay.active {
+    display: flex;
+}
+.dbx-lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+.dbx-lightbox-overlay .dbx-lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-right: 0.5em;
-    position: relative;
-    left: 0;
+    cursor: pointer;
+    z-index: 10000;
+    text-shadow: 0 2px 8px #000;
 } 
