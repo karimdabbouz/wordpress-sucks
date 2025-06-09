@@ -12,6 +12,18 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php
-echo do_shortcode('[elementor-template id="1208"]');
-?> 
+<nav class="dbx-navbar">
+    <button class="dbx-navbar-burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="dbx-navbar-menu">
+        <?php
+        wp_nav_menu([
+            'theme_location' => 'primary',
+            'container' => false,
+            'menu_class' => 'dbx-navbar-menu-list',
+            'fallback_cb' => false
+        ]);
+        ?>
+    </div>
+</nav>

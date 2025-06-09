@@ -1,9 +1,20 @@
 <?php
+add_action('after_setup_theme', function() {
+    register_nav_menu('primary', 'Primary Menu');
+});
+
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('hello-elementor-child', get_stylesheet_uri(), ['hello-elementor-theme-style'], wp_get_theme()->get('Version'));
     wp_enqueue_script(
         'dbx-lightbox',
         get_stylesheet_directory_uri() . '/lightbox.js',
+        [],
+        null,
+        true
+    );
+    wp_enqueue_script(
+        'dbx-navbar',
+        get_stylesheet_directory_uri() . '/navbar.js',
         [],
         null,
         true
