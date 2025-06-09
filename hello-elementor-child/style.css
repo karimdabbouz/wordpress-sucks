@@ -170,4 +170,148 @@ body {
     cursor: pointer;
     z-index: 10000;
     text-shadow: 0 2px 8px #000;
+}
+
+/* Headings */
+.dbx-single-content h1,
+.dbx-single-content h2,
+.dbx-single-content h3,
+.dbx-single-content h4,
+.dbx-single-content h5,
+.dbx-single-content h6 {
+    font-family: 'PT Serif', Georgia, serif;
+    color: #071113;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+}
+.dbx-single-content h1 { font-size: 2.2rem; }
+.dbx-single-content h2 { font-size: 1.7rem; border-bottom: 2px solid #A6D770; padding-bottom: 0.2em; }
+.dbx-single-content h3 { font-size: 1.3rem; color: #24896C; }
+.dbx-single-content h4, .dbx-single-content h5, .dbx-single-content h6 { font-size: 1.1rem; color: #003A40; }
+
+/* Paragraphs */
+.dbx-single-content p {
+    margin: 1.5em 0;
+    color: #071113;
+    font-size: 20px;
+    font-family: 'PT Serif', Georgia, serif;
+}
+
+/* Lists */
+.dbx-single-content ul,
+.dbx-single-content ol {
+    margin: 1.5em 0 1.5em 2em;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'PT Serif', Georgia, serif;
+}
+.dbx-single-content ul {
+    list-style: disc inside;
+}
+.dbx-single-content ol {
+    list-style: decimal inside;
+}
+.dbx-single-content li {
+    margin-bottom: 0.5em;
+}
+
+/* Inline Images & Captions */
+.dbx-single-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem auto;
+    box-shadow: none;
+}
+.dbx-single-content figure {
+    margin: 2.5rem 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+.dbx-single-content figcaption {
+    font-size: 0.98rem;
+    color: #24896C;
+    text-align: center;
+    padding: 0.5em 1em 1em 1em;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: none;
+}
+
+/* Blockquotes */
+.dbx-single-content blockquote {
+    border-left: 4px solid #A6D770;
+    background: #E0F2EC;
+    color: #003A40;
+    margin: 2em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+/* Tables */
+.dbx-single-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.dbx-single-content th,
+.dbx-single-content td {
+    border: 1px solid #E0F2EC;
+    padding: 0.75em 1em;
+    text-align: left;
+}
+.dbx-single-content th {
+    background: #E0F2EC;
+    color: #003A40;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Buttons (for affiliate links/CTAs) */
+.dbx-single-content .wp-block-button__link,
+.dbx-single-content a.button,
+.dbx-single-content button {
+    display: inline-block;
+    background: linear-gradient(90deg, #24896C 0%, #A6D770 100%);
+    color: #fff !important;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(36,137,108,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.dbx-single-content .wp-block-button__link:hover,
+.dbx-single-content a.button:hover,
+.dbx-single-content button:hover {
+    background: linear-gradient(90deg, #003A40 0%, #24896C 100%);
+    box-shadow: 0 4px 16px rgba(36,137,108,0.12);
+}
+
+/* Affiliate Disclosure */
+.dbx-affiliate-disclosure {
+    font-size: 0.95rem;
+    color: #888;
+    background: #E0F2EC;
+    border-left: 4px solid #A6D770;
+    padding: 0.75em 1.5em;
+    margin: 2em 0;
+    border-radius: 6px;
+    font-family: 'Poppins', Arial, sans-serif;
 } 

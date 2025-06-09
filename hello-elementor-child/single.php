@@ -42,5 +42,3 @@ if ( have_posts() ) :
         </main>
     <?php endwhile;
 endif;
-
-get_footer(); 
